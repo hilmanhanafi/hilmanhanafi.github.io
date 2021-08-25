@@ -149,7 +149,7 @@
         </div>
         <div class="col-md-4 mb-3">
           <div class="card">
-            <img src="img/4.jpg" class="card-img-top" alt="Project 1">
+            <img src="img/2.jpg" class="card-img-top" alt="Project 1">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
@@ -240,6 +240,7 @@
     const btnKirim = document.querySelector('.btn-kirim');
     const btnLoading = document.querySelector('.btn-loading');
     const myAlert = document.querySelector('.my-alert');
+
     form.addEventListener('submit', e => {
       e.preventDefault()
       // ketika tombol submit diklik
@@ -248,6 +249,7 @@
       btnKirim.classList.toggle('d-none');
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
+
           // tampilkan tombol kirim, hilangkan tombol loading
           btnLoading.classList.toggle('d-none');
           btnKirim.classList.toggle('d-none');
