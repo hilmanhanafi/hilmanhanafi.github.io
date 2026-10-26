@@ -1,898 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
-    <!-- Title -->
+    <meta name="description" content="Portofolio Hilman Hanafi Ash Shidiqi - Web Developer" />
     <title>Hilman Hanafi - Web Developer</title>
-
-    <!--google font-->
+    <link href="images/favicon.ico" rel="shortcut icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,500"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Favicon -->
-    <link href="images/favicon.ico" rel="shortcut icon" />
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
-    <!-- OWL CAROSEL CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/owl.theme.css" />
-
-    <!-- MAGNIFIC CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-
-    <!-- Circliful CSS -->
-    <link rel="stylesheet" href="css/jquery.circliful.css" />
-
-    <!--icon css-->
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke.css" />
-
-    <!--animate-->
-    <link href="css/animate.css" rel="stylesheet" type="text/css" />
-    <link href="css/simpletextrotator.css" rel="stylesheet" type="text/css" />
-
-    <!-- Other CSS -->
-    <link href="css/bookblock.css" rel="stylesheet" type="text/css" />
-
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-
-    <!-- Color CSS -->
-    <link href="css/colors/default.css" rel="stylesheet" type="text/css" />
-
-    <!-- PreLoader -->
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/pace.js" type="text/javascript"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!--[if IE
-      ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
-    /><![endif]-->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/modern.css" rel="stylesheet" />
   </head>
-  <body data-spy="scroll" data-target="#nav-top">
-    <!-- Hides the complete page until window loads -->
-    <div class="cover"></div>
+  <body>
+    <canvas id="bg"></canvas>
 
-    <header>
-      <!-- Main company header -->
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-3">
-              <!-- START LOGO -->
-              <div class="logo">
-                <a href="index.html">Hilman Hanafi</a>
-              </div>
-              <!-- END LOGO -->
-            </div>
-            <div class="col-xs-9">
-              <div class="navbar-header">
-                <button
-                  type="button"
-                  class="navbar-toggle"
-                  data-toggle="collapse"
-                  data-target="#nav-top"
-                >
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-
-                <!-- Top navigation buttons, visible only in extra small mode -->
-                <a
-                  class="visible-xs bb-nav-prev navbar-brand navbar-brand-pagination"
-                  href="#"
-                  ><i class="fa fa-angle-left"></i
-                ></a>
-                <a
-                  class="visible-xs bb-nav-next navbar-brand navbar-brand-pagination"
-                  href="#"
-                  ><i class="fa fa-angle-right"></i
-                ></a>
-                <!-- /Top navigation buttons -->
-              </div>
-              <div class="collapse navbar-collapse" id="nav-top">
-                <ul class="nav navbar-nav navbar-right" id="menu">
-                  <li><a href="#" data-page="1">About</a></li>
-                  <li><a href="#" data-page="2">Skills</a></li>
-                  <li><a href="#" data-page="3">Education</a></li>
-                  <li><a href="#" data-page="4">Experience</a></li>
-                  <li><a href="#" data-page="5">Portfolio</a></li>
-                </ul>
-              </div>
-              <!-- /navbar-collapse -->
-            </div>
-          </div>
-          <!--/row-->
+    <nav>
+      <div class="wrap">
+        <a href="#home" class="logo">hilman<span class="grad">.dev</span></a>
+        <div class="links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#journey">Journey</a>
+          <a href="#work">Portfolio</a>
+          <a href="#contact">Contact</a>
         </div>
-        <!-- /container -->
-      </nav>
-      <!--/nav-->
-    </header>
-
-    <!-- container -->
-    <div class="container-fluid">
-      <div class="bb-custom-wrapper">
-        <div id="bb-bookblock" class="bb-bookblock">
-          <!-- bb-item represents a page in the resume.
-					 add or remove bb-item divs to add or remove pages.-->
-
-          <!-- First page, your photo and title -->
-          <div class="bb-item" id="page-0">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="card-box">
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <div class="header-text text-center">
-                          <img
-                            src="images/hilman.png"
-                            alt=""
-                            class="img-circle"
-                          />
-                          <h2>Hilman Hanafi Ash Shidiqi</h2>
-                          <p>Web Developer</p>
-                          <div class="social-links header-links">
-                            <ul>
-                              <li>
-                                <a
-                                  href="https://www.facebook.com/people/Hilman-Hanafi/pfbid02oHTethnt9mED5P9mWzPtrekPjREzFCQBndPG31oaHssQSZTJFXajXxTFAAtck3xSl/"
-                                  ><i class="fa fa-facebook facebook"></i
-                                ></a>
-                              </li>
-                              <li>
-                                <a
-                                  href="https://x.com/hilmanhanafi04?t=OWFhP8Po9mTQhMq1Q-M6Sw&s=08"
-                                  ><i class="fa fa-twitter twitter"></i
-                                ></a>
-                              </li>
-                              <li>
-                                <a href="mailto:hilmanhanafi04@gmail.com"
-                                  ><i class="fa fa-google-plus google-plus"></i
-                                ></a>
-                              </li>
-                              <li>
-                                <a href="https://hilmanhanafi.github.io/"
-                                  ><i class="fa fa-dribbble dribbble"></i
-                                ></a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--/row-->
-                    <div class="row">
-                      <div class="col-md-6 col-md-offset-1">
-                        <div class="introduce">
-                          <h2 class="title">Personal Details</h2>
-                          <p>
-                            Halo, saya Hilman memiliki pengalaman di bagian web developer
-                            dalam membangun website serta aplikasi berbasis web.
-                            Terampil dalam menggunakan teknologi seperti HTML,
-                            CSS, JavaScript, serta backend dengan PHP. Mampu
-                            bekerja dalam tim maupun secara mandiri.
-                          </p>
-                          <a class="btn btn-primary" style="background-color: #66bb6a;" href="">Download CV</a>
-                        </div>
-                      </div>
-                      <div class="col-md-5 col-xs-12">
-                        <div class="presonal-inform">
-                          <ul class="list-unstyled">
-                            <li class="clearfix">
-                              <i class="pe-7s-user"></i><b>Name:</b> Hilman
-                              Hanafi Ash Shidiqi
-                            </li>
-                            <li class="clearfix">
-                              <i class="pe-7s-phone"></i
-                              ><b>Phone/WhatsApp:</b> 6285759920857
-                            </li>
-                            <li class="clearfix">
-                              <i class="pe-7s-mail"></i
-                              ><b>Email:</b> hilmanhanafi04@gmail.com
-                            </li>
-                            <li class="clearfix">
-                              <i class="pe-7s-gift"></i><b>Date of Birth:</b> 08
-                              April 2004
-                            </li>
-                            <li class="clearfix">
-                              <i class="pe-7s-map-marker"></i
-                              ><b>Address:</b> Jl. Tipar Barat Rt09/02 No.6,
-                              Kabupaten Bandung Barat, Kecamatan Padalarang
-                            </li>
-                            <li class="clearfix">
-                              <i class="pe-7s-note2"></i
-                              ><b>Languages:</b> Indonesia, English
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <!--/row-->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /First page -->
-
-          <!-- skill -->
-          <div class="bb-item" id="page-2">
-            <div class="bb-custom-side">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="card-box">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <div class="section-title">
-                            <h2>skills</h2>
-                            <div class="title-border"></div>
-                            <p>Keahlian yang saya punya.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <!--/row-->
-                      <div class="row text-center mt-5 mb-5">
-                        <div class="col-sm-3">
-                          <div class="skill">
-                            <img width="150px" src="images/php.png" alt="php" />
-                            <h4>PHP</h4>
-                          </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                          <div class="skill">
-                            <img
-                              width="200px"
-                              src="images/laravel.png"
-                              alt="Laravel"
-                            />
-                            <h4>Laravel</h4>
-                          </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                          <div class="skill">
-                            <img
-                              width="145px"
-                              src="images/ci.png"
-                              alt="Codeigniter"
-                            />
-                            <h4>Codeigniter 3/4</h4>
-                          </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                          <div class="skill">
-                            <img
-                              width="80px"
-                              src="images/js.png"
-                              alt="JavaScript"
-                            />
-                            <h4>JavaScript</h4>
-                          </div>
-                        </div>
-                      </div>
-                      <!--/row -->
-
-                      <!--/row-->
-                      <div class="row text-center mt-5 mb-5">
-                        <div class="col-sm-3">
-                          <div class="skill">
-                            <img
-                              width="100px"
-                              src="images/jquery.png"
-                              alt="jquery"
-                            />
-                            <h4>jQuery</h4>
-                          </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                          <div class="skill">
-                            <img
-                              width="200px"
-                              src="images/ajax.png"
-                              alt="Ajax"
-                            />
-                            <h4>Ajax</h4>
-                          </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                          <div class="skill">
-                            <img
-                              width="145px"
-                              src="images/mysql.png"
-                              alt="MySQL"
-                            />
-                            <h4>MySQL</h4>
-                          </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                          <div class="skill">
-                            <img
-                              width="80px"
-                              src="images/bs.png"
-                              alt="Bootstrap"
-                            />
-                            <h4>Bootstrap</h4>
-                          </div>
-                        </div>
-                      </div>
-                      <!--/row -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--/page-2-->
-          <!-- /skill -->
-
-          <!-- Education -->
-          <div class="bb-item" id="page-3">
-            <div class="bb-custom-side">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="card-box">
-                      <div class="row">
-                        <div class="col-md-12 col-xs-12">
-                          <div class="section-title">
-                            <h2 class="">education</h2>
-                            <div class="title-border"></div>
-                            <p>Pendidikan yang pernah saya lalui.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <!--/row-->
-
-                      <div class="time-line">
-                        <!-- Right Services -->
-                        <div class="row">
-                          <div class="col-sm-6 pull-right rex-right">
-                            <div class="colam">
-                              <div class="rs-round">
-                                <i class="pe-7s-diamond"></i>
-                              </div>
-                              <div class="rex-item">
-                                <h3>2022-Sekarang</h3>
-                                <h4>Universitas Sangga Buana YPKP</h4>
-                                <p>
-                                  Saya melakukan pendidikan di Universitas
-                                  Sangga Buana YPKP - Teknik Informatika, dengan
-                                  jurusan Teknik Informatika.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--/row-->
-
-                        <!-- Left Services -->
-                        <div class="row">
-                          <div class="col-sm-6 pull-left rex-left">
-                            <div class="colam">
-                              <div class="rs-round second">
-                                <i class="pe-7s-door-lock"></i>
-                              </div>
-                              <div class="rex-item">
-                                <h3>2018-2021</h3>
-                                <h4>SMK TI Garuda Nusantara Cimahi</h4>
-                                <p>
-                                  Saya bersekolah di SMK TI Garuda Nusantara
-                                  Cimahi - Rekayasa Perangkat Lunak, dengan
-                                  jurusan Rekayasa Perangkat Lunak.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--/row-->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--/page-3-->
-          <!-- /Education -->
-
-          <!-- Experience -->
-          <div class="bb-item" id="page-4">
-            <div class="bb-custom-side" id="experience">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="card-box">
-                      <div class="row">
-                        <div class="col-md-12 col-xs-12">
-                          <div class="section-title">
-                            <h2 class="">experience</h2>
-                            <div class="title-border"></div>
-                            <p>Pengalaman yang pernah saya lakukan.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <!--/row-->
-
-                      <div class="time-line">
-                        <!-- Right Services -->
-                        <div class="row">
-                          <div class="col-sm-6 pull-right rex-right">
-                            <div class="colam">
-                              <div class="rs-round">
-                                <i class="pe-7s-diamond"></i>
-                              </div>
-                              <div class="rex-item">
-                                <h3>September 2021 - Sekarang</h3>
-                                <h4>Web developer - HI GROUP</h4>
-                                <p>
-									<ol>
-										<li> Membuat web POS menggunakan Laravel 7, MYSQL,
-											Javascript, Jquery, Ajax dan Bootstrap.</li>
-										<li> Membuat web aplikasi produksian barang.</li>
-										<li> Membuat web
-											pembayaran masing-masing pasok.</li>
-										<li>Membuat web
-												manajemen kas masuk dan keluar.</li>
-										<li>Membuat web
-											landing page Official brand produk.</li>
-										<li> Membuat web
-											manajemen produk masuk dan keluar.</li>
-										<li>
-											Membuat web
-											manajemen bahan.
-										</li>
-
-										<li>
-											Membuat web absensi
-											geolocation GPS dan Foto.
-										</li>
-									</ol>
-
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--/row-->
-
-                        <!-- Left Services -->
-                        <div class="row">
-                          <div class="col-sm-6 pull-left rex-left">
-                            <div class="colam">
-                              <div class="rs-round second">
-                                <i class="pe-7s-door-lock"></i>
-                              </div>
-                              <div class="rex-item">
-                                <h3>Januari 2021- Maret 2021</h3>
-                                <h4>Qiva Project - Magang</h4>
-                                <p>
-									Membuat web pembayaran SPP menggunakan Codeigniter 3, MYSQL, Javascript  dan Jquery.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--/row-->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--/page-4-->
-          <!-- /Experience -->
-
-          <!-- portfolio -->
-          <div class="bb-item" id="page-5">
-            <div class="bb-custom-side">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="card-box" id="work">
-                      <div class="row">
-                        <div class="col-md-12 col-xs-12">
-                          <div class="section-title">
-                            <h2 class="">Portfolio</h2>
-                            <div class="title-border"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--end row-->
-                      <div class="row" style="margin-bottom: 30px;">
-                        <div class="col-md-6">
-                          <img
-                          src="images/portofolio/reem1.png"
-                          class="img-responsive border-man"
-                          alt="Resume / CV"
-                        />
-                        </div>
-
-                        <div class="col-md-6">
-                          <h3>REEM</h3>
-                          <p>
-                            Aplikasi REEM dibuat dengan fitur:
-
-                            <ol>
-                              <li>Membuat web POS menggunakan Laravel 7, MYSQL,
-                                Javascript, Jquery, Ajax dan Bootstrap.</li>
-                              <li> Membuat web aplikasi produksian barang.</li>
-                              <li> Membuat web pembayaran masing-masing pasok.</li>
-                              <li>Membuat web
-                                manajemen kas masuk dan keluar.</li>  
-                              <li>Membuat web
-                                landing page Official brand produk.</li>
-                              <li> Membuat web
-                                manajemen produk masuk dan keluar.</li>
-                              <li>
-                                Membuat web absensi 
-                                geolocation GPS dan Foto.
-                              </li>
-                            </ol>
-
-                          </p>
-                         
-                        </div>
-
-					
-                      </div>
-                      <!--end row-->
-
-                      <hr style="border: 1px solid rgb(85, 85, 85);">
-
-                      <div class="row">
-                        <div class="col-md-6">
-                          <img
-                          src="images/portofolio/spp-ci3.png"
-                          class="img-responsive border-man"
-                          alt="Resume / CV"
-                        />
-                        </div>
-
-                        <div class="col-md-6">
-                          <h3>Pembayaran SPP</h3>
-                          <p>Jobdesk yang dikerjakan saya meliputi:</p>
-                          <ol>
-                            <li>Membuat web pembayaran SPP menggunakan Codeigniter 3, MYSQL, Javascript  dan Jquery.</li>
-                          </ol>
-                        </div>
-
-					
-                      </div>
-                      <!--end row-->
-
-
-                      
-                      <hr style="border: 1px solid rgb(85, 85, 85);">
-
-                      <div class="row">
-                        <div class="col-md-6">
-                          <img
-                          src="images/portofolio/katalog-flovia.png"
-                          class="img-responsive border-man"
-                          alt="Resume / CV"
-                        />
-                        </div>
-
-                        <div class="col-md-6">
-                          <h3>Website Katalog Produk FLOVIA</h3>
-                          <p>Keterangan:</p>
-                          <ol>
-                            <li>Website Katalog Produk untuk memudahkan pelangan melihat produk apa saja yang ada di FLOVIA.</li>
-                          </ol>
-                        </div>
-
-					
-                      </div>
-                      <!--end row-->
-
-
-                      <hr style="border: 1px solid rgb(85, 85, 85);">
-
-                      <div class="row">
-                        <div class="col-md-6">
-                          <img
-                          src="images/portofolio/katalog-malakai.png"
-                          class="img-responsive border-man"
-                          alt="Resume / CV"
-                        />
-                        </div>
-
-                        <div class="col-md-6">
-                          <h3>Website Katalog Produk MALAKAI BASIC</h3>
-                          <p>Keterangan:</p>
-                          <ol>
-                            <li>Website Katalog Produk untuk memudahkan pelangan melihat produk apa saja yang ada di MALAKAI BASIC.</li>
-                          </ol>
-                        </div>
-
-					
-                      </div>
-                      <!--end row-->
-
-                      <hr style="border: 1px solid rgb(85, 85, 85);">
-
-                      <div class="row">
-                        <div class="col-md-6">
-                          <img
-                          src="images/portofolio/katalog-reseller.png"
-                          class="img-responsive border-man"
-                          alt="Resume / CV"
-                        />
-                        </div>
-
-                        <div class="col-md-6">
-                          <h3>Website Katalog Produk RESELLER HIMALAKAI</h3>
-                          <p>Keterangan:</p>
-                          <ol>
-                            <li>Website Katalog Produk Reseller yang merupakan gabungan dari produk MALAKAI BASIC dan HI FASHION.</li>
-                          </ol>
-                        </div>
-
-					
-                      </div>
-                      <!--end row-->
-
-
-                      <hr style="border: 1px solid rgb(85, 85, 85);">
-
-                      <div class="row">
-                        <div class="col-md-6">
-                          <img
-                          src="images/portofolio/absensi.png"
-                          class="img-responsive border-man
-                          alt="Resume / CV"
-                        />
-                        </div>
-
-                        <div class="col-md-6">
-                          <h3>Website Absensi Karyawan</h3>
-                          <p>Keterangan:</p>
-                          <ol>
-                            <li>Website yang dibuat menggunakan teknologi geolocation dan photo.</li>
-                          </ol>
-                        </div>
-
-					
-                      </div>
-                      <!--end row-->
-
-                      <hr style="border: 1px solid rgb(85, 85, 85);">
-
-                      <div class="row">
-                        <div class="col-md-6">
-                          <img
-                          style="display: block;margin: auto;"
-                          width="200px"
-                          src="images/portofolio/medina.jpeg"
-                          class="img-responsive border-man"
-                          alt="Resume / CV"
-                        />
-                        </div>
-
-                        <div class="col-md-6">
-                          <h3>Aplikasi Kesehatan Medina</h3>
-                          <p>Keterangan:</p>
-                          <p>Aplikasi Medina dibuat menggunakan android studio java dan REST API Codeigniter 3, didalamnya terdapat fitur:</p>
-                          <ol>
-                            <li>Artikel Kesehatan.</li>
-                            <li>Artikel Olahraga Ringan.</li>
-                            <li>Cek BMI.</li>
-                            <li>Cek Diabetes Menggunakan Sistem Pakar.</li>
-                          </ol>
-                        </div>
-
-					
-                      </div>
-                      <!--end row-->
-
-
-                                            <hr style="border: 1px solid rgb(85, 85, 85);">
-
-                      <div class="row">
-                        <div class="col-md-6">
-                          <img
-                          style="display: block;margin: auto;"
-                          width="200px"
-                          src="images/portofolio/svara.jpeg"
-                          class="img-responsive border-man"
-                          alt="Resume / CV"
-                        />
-                        </div>
-
-                        <div class="col-md-6">
-                          <h3>Aplikasi SVARA</h3>
-                          <p>Keterangan:</p>
-                          <p>Aplikasi SVARA dibuat menggunakan Flutter dan RESt API Express JS, didalamnya terdapat fitur:</p>
-                          <ol>
-                            <li>Playlist Musik.</li>
-                            <li>Library Musik.</li>
-                            <li>Musik yang sedang tren.</li>
-                          </ol>
-                        </div>
-                      </div>
-                      <!--end row-->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--/page-5-->
-          <!-- /portfolio -->
-
-          <!-- contact -->
-          <div class="bb-item" id="page-6">
-            <div class="bb-custom-side" id="portfolio">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="card-box">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="section-title">
-                            <h2>contact me</h2>
-                            <div class="title-border"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--/row-->
-                      <div class="row">
-                        <div class="col-md-12 col-xs-12">
-                          <!-- START contect -->
-                          <div class="contact-form">
-                            <form id="contact-form" method="post">
-                              <div class="row">
-                                <div class="form-group col-md-4">
-                                  <input
-                                    type="text"
-                                    name="name"
-                                    class="form-control"
-                                    id="first-name"
-                                    placeholder="Name"
-                                    required="required"
-                                  />
-                                </div>
-                                <div class="form-group col-md-4">
-                                  <input
-                                    type="email"
-                                    name="email"
-                                    class="form-control"
-                                    id="email"
-                                    placeholder="Email"
-                                    required="required"
-                                  />
-                                </div>
-                                <div class="form-group col-md-4">
-                                  <input
-                                    type="text"
-                                    name="name"
-                                    class="form-control"
-                                    id="contect"
-                                    placeholder="Phone Contect"
-                                    required="required"
-                                  />
-                                </div>
-
-                                <div class="form-group col-md-12">
-                                  <textarea
-                                    rows="6"
-                                    name="message"
-                                    class="form-control"
-                                    id="description"
-                                    placeholder="Your Message"
-                                    required="required"
-                                  ></textarea>
-                                </div>
-                                <div class="form-group col-md-12 text-center">
-                                  <div class="actions">
-                                    <input
-                                      type="submit"
-                                      value="Submit now"
-                                      name="submit"
-                                      id="submitButton"
-                                      class="btn btn-custom"
-                                      title="Submit Your Message!"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                      <!--end row-->
-                      <div class="row">
-                        <div class="col-sm-12 text-center">
-                          <div class="social-links header-links footer-p-t-20">
-                            <ul>
-                              <li>
-                                <a href=""
-                                  ><i class="fa fa-facebook facebook"></i
-                                ></a>
-                              </li>
-                              <li>
-                                <a href=""
-                                  ><i class="fa fa-twitter twitter"></i
-                                ></a>
-                              </li>
-                              <li>
-                                <a href=""
-                                  ><i class="fa fa-google-plus google-plus"></i
-                                ></a>
-                              </li>
-                              <li>
-                                <a href=""
-                                  ><i class="fa fa-dribbble dribbble"></i
-                                ></a>
-                              </li>
-                            </ul>
-                          </div>
-                          <p class="copyright">
-                            © 2017. Design By Mannat-Themes
-                          </p>
-                        </div>
-                      </div>
-                      <!--/row-->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--/page-6-->
-          <!--/contact-->
-        </div>
-        <!--/bb-bookblock-->
       </div>
-      <!--/bb-custom-wrapper-->
-    </div>
-    <!-- /container -->
+    </nav>
 
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
+    <main>
+      <!-- hero -->
+      <header class="hero" id="home">
+        <div class="wrap">
+          <div class="badge"><i></i> Tersedia untuk project baru</div>
+          <h1>Hai, saya <span class="grad">Hilman Hanafi</span></h1>
+          <div class="role"><span id="typed"></span><span class="cursor"></span></div>
+          <p class="lead">
+            Membangun website dan aplikasi berbasis web yang rapi, cepat, dan
+            mudah digunakan - dari POS, manajemen produksi, hingga absensi GPS.
+          </p>
+          <div class="cta">
+            <a href="#work" class="btn primary">Lihat Portfolio</a>
+            <a href="#contact" class="btn ghost">Hubungi Saya</a>
+          </div>
+        </div>
+        <div class="scroll-hint">Scroll</div>
+      </header>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+      <!-- about -->
+      <section id="about">
+        <div class="wrap">
+          <div class="eyebrow reveal">About</div>
+          <h2 class="title reveal">Sedikit tentang saya</h2>
+          <div class="about">
+            <div class="glass bio reveal">
+              <div class="me">
+                <img src="images/hilman.png" alt="Hilman" />
+                <div>
+                  <h3>Hilman Hanafi Ash Shidiqi</h3>
+                  <small>Web Developer</small>
+                </div>
+              </div>
+              <p>
+                Halo, saya Hilman memiliki pengalaman di bagian web developer
+                dalam membangun website serta aplikasi berbasis web. Terampil
+                dalam menggunakan teknologi seperti HTML, CSS, JavaScript, serta
+                backend dengan PHP. Mampu bekerja dalam tim maupun secara
+                mandiri.
+              </p>
+              <div class="cta">
+                <a href="#" class="btn primary">Download CV</a>
+              </div>
+            </div>
+            <ul class="glass info reveal">
+              <li><b>Nama</b>Hilman Hanafi Ash Shidiqi</li>
+              <li><b>Phone / WhatsApp</b>6285759920857</li>
+              <li><b>Email</b>hilmanhanafi04@gmail.com</li>
+              <li><b>Tanggal Lahir</b>08 April 2004</li>
+              <li><b>Alamat</b>Jl. Tipar Barat Rt09/02 No.6, Kabupaten Bandung Barat, Kecamatan Padalarang</li>
+              <li><b>Bahasa</b>Indonesia, English</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <!-- Other JavaScript -->
-    <script src="js/jquery.bookblock.js" type="text/javascript"></script>
-    <script src="js/jquery.tabSlideOut.v1.3.js" type="text/javascript"></script>
-    <script src="js/jquery.mixitup.js"></script>
-    <!--gallary-->
-    <script src="js/gallery.js"></script>
-    <script src="js/mansory.js"></script>
-    <!-- OWL CAROUSEL JS  -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- PARALLAX JS -->
-    <script src="js/jquery.stellar.min.js"></script>
-    <!-- MAGNIFICANT JS -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- EasyPieChart -->
-    <script src="js/jquery.circliful.min.js"></script>
-    <!-- app JS -->
-    <script src="js/app.js" type="text/javascript"></script>
+      <!-- skills -->
+      <section id="skills">
+        <div class="wrap">
+          <div class="eyebrow reveal">Skills</div>
+          <h2 class="title reveal">Keahlian yang saya punya</h2>
+          <div class="skills">
+            <div class="glass skill reveal"><div class="ico"><img src="images/php.png" alt="PHP" /></div><h4>PHP</h4></div>
+            <div class="glass skill reveal"><div class="ico"><img src="images/laravel.png" alt="Laravel" /></div><h4>Laravel</h4></div>
+            <div class="glass skill reveal"><div class="ico"><img src="images/ci.png" alt="Codeigniter" /></div><h4>Codeigniter 3/4</h4></div>
+            <div class="glass skill reveal"><div class="ico"><img src="images/js.png" alt="JavaScript" /></div><h4>JavaScript</h4></div>
+            <div class="glass skill reveal"><div class="ico"><img src="images/jquery.png" alt="jQuery" /></div><h4>jQuery</h4></div>
+            <div class="glass skill reveal"><div class="ico"><img src="images/ajax.png" alt="Ajax" /></div><h4>Ajax</h4></div>
+            <div class="glass skill reveal"><div class="ico"><img src="images/mysql.png" alt="MySQL" /></div><h4>MySQL</h4></div>
+            <div class="glass skill reveal"><div class="ico"><img src="images/bs.png" alt="Bootstrap" /></div><h4>Bootstrap</h4></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- education + experience -->
+      <section id="journey">
+        <div class="wrap">
+          <div class="eyebrow reveal">Journey</div>
+          <h2 class="title reveal">Pendidikan &amp; pengalaman</h2>
+          <div class="tl-wrap">
+            <div class="tl">
+              <h3 class="sub reveal">Pengalaman</h3>
+              <div class="tl-items">
+                <div class="glass tl-item reveal">
+                  <div class="date">September 2021 - Sekarang</div>
+                  <h4>Web developer - HI GROUP</h4>
+                  <ul>
+                    <li>Web POS menggunakan Laravel 7, MySQL, JavaScript, jQuery, Ajax dan Bootstrap.</li>
+                    <li>Web aplikasi produksian barang.</li>
+                    <li>Web pembayaran masing-masing pasok.</li>
+                    <li>Web manajemen kas masuk dan keluar.</li>
+                    <li>Web landing page Official brand produk.</li>
+                    <li>Web manajemen produk masuk dan keluar.</li>
+                    <li>Web manajemen bahan.</li>
+                    <li>Web absensi geolocation GPS dan Foto.</li>
+                  </ul>
+                </div>
+                <div class="glass tl-item reveal">
+                  <div class="date">Januari 2021 - Maret 2021</div>
+                  <h4>Qiva Project - Magang</h4>
+                  <p>Membuat web pembayaran SPP menggunakan Codeigniter 3, MySQL, JavaScript dan jQuery.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tl">
+              <h3 class="sub reveal">Pendidikan</h3>
+              <div class="tl-items">
+                <div class="glass tl-item reveal">
+                  <div class="date">2022 - Sekarang</div>
+                  <h4>Universitas Sangga Buana YPKP</h4>
+                  <p>Teknik Informatika.</p>
+                </div>
+                <div class="glass tl-item reveal">
+                  <div class="date">2018 - 2021</div>
+                  <h4>SMK TI Garuda Nusantara Cimahi</h4>
+                  <p>Rekayasa Perangkat Lunak.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio -->
+      <section id="work">
+        <div class="wrap">
+          <div class="eyebrow reveal">Portfolio</div>
+          <h2 class="title reveal">Project yang pernah saya kerjakan</h2>
+          <div class="projects">
+            <article class="glass card reveal">
+              <div class="shot"><img src="images/portofolio/reem1.png" alt="REEM" /></div>
+              <div class="body">
+                <h4>REEM</h4>
+                <p>Sistem POS, produksi barang, pembayaran pasok, kas masuk/keluar, manajemen produk dan bahan, serta absensi GPS &amp; foto.</p>
+                <div class="tags"><span>Laravel 7</span><span>MySQL</span><span>jQuery</span><span>Ajax</span><span>Bootstrap</span></div>
+              </div>
+            </article>
+            <article class="glass card reveal">
+              <div class="shot"><img src="images/portofolio/spp-ci3.png" alt="Pembayaran SPP" /></div>
+              <div class="body">
+                <h4>Pembayaran SPP</h4>
+                <p>Web pembayaran SPP sekolah.</p>
+                <div class="tags"><span>Codeigniter 3</span><span>MySQL</span><span>jQuery</span></div>
+              </div>
+            </article>
+            <article class="glass card reveal">
+              <div class="shot"><img src="images/portofolio/katalog-flovia.png" alt="FLOVIA" /></div>
+              <div class="body">
+                <h4>Katalog Produk FLOVIA</h4>
+                <p>Website katalog untuk memudahkan pelanggan melihat produk yang ada di FLOVIA.</p>
+                <div class="tags"><span>Web</span><span>Katalog</span></div>
+              </div>
+            </article>
+            <article class="glass card reveal">
+              <div class="shot"><img src="images/portofolio/katalog-malakai.png" alt="MALAKAI BASIC" /></div>
+              <div class="body">
+                <h4>Katalog Produk MALAKAI BASIC</h4>
+                <p>Website katalog untuk memudahkan pelanggan melihat produk yang ada di MALAKAI BASIC.</p>
+                <div class="tags"><span>Web</span><span>Katalog</span></div>
+              </div>
+            </article>
+            <article class="glass card reveal">
+              <div class="shot"><img src="images/portofolio/katalog-reseller.png" alt="Reseller Himalakai" /></div>
+              <div class="body">
+                <h4>Katalog Reseller HIMALAKAI</h4>
+                <p>Katalog produk reseller gabungan dari MALAKAI BASIC dan HI FASHION.</p>
+                <div class="tags"><span>Web</span><span>Katalog</span></div>
+              </div>
+            </article>
+            <article class="glass card reveal">
+              <div class="shot"><img src="images/portofolio/absensi.png" alt="Absensi" /></div>
+              <div class="body">
+                <h4>Website Absensi Karyawan</h4>
+                <p>Absensi karyawan menggunakan teknologi geolocation dan foto.</p>
+                <div class="tags"><span>Geolocation</span><span>Camera</span><span>PHP</span></div>
+              </div>
+            </article>
+            <article class="glass card reveal">
+              <div class="shot phone"><img src="images/portofolio/medina.jpeg" alt="Medina" /></div>
+              <div class="body">
+                <h4>Aplikasi Kesehatan Medina</h4>
+                <p>Artikel kesehatan, artikel olahraga ringan, cek BMI, dan cek diabetes menggunakan sistem pakar.</p>
+                <div class="tags"><span>Android Java</span><span>REST API</span><span>Codeigniter 3</span></div>
+              </div>
+            </article>
+            <article class="glass card reveal">
+              <div class="shot phone"><img src="images/portofolio/svara.jpeg" alt="SVARA" /></div>
+              <div class="body">
+                <h4>Aplikasi SVARA</h4>
+                <p>Aplikasi musik dengan playlist, library, dan musik yang sedang tren.</p>
+                <div class="tags"><span>Flutter</span><span>Express JS</span><span>REST API</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section id="contact">
+        <div class="wrap">
+          <div class="glass contact reveal">
+            <div class="eyebrow">Contact</div>
+            <h2>Punya project? <span class="grad">Mari berkolaborasi.</span></h2>
+            <p>Kirim pesan lewat email atau WhatsApp, saya akan segera membalas.</p>
+            <div class="cta" style="justify-content:center">
+              <a class="btn primary" href="mailto:hilmanhanafi04@gmail.com">Kirim Email</a>
+              <a class="btn ghost" href="https://wa.me/6285759920857">WhatsApp</a>
+            </div>
+            <div class="socials">
+              <a href="https://www.facebook.com/people/Hilman-Hanafi/pfbid02oHTethnt9mED5P9mWzPtrekPjREzFCQBndPG31oaHssQSZTJFXajXxTFAAtck3xSl/" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://x.com/hilmanhanafi04?t=OWFhP8Po9mTQhMq1Q-M6Sw&amp;s=08" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="mailto:hilmanhanafi04@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+              <a href="https://hilmanhanafi.github.io/" aria-label="Website"><i class="fa fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2026 Hilman Hanafi Ash Shidiqi</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/modern.js"></script>
   </body>
 </html>
